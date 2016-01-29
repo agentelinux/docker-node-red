@@ -7,6 +7,8 @@ RUN npm install -g node-red
 
 WORKDIR /usr/local/lib/node_modules
 
+RUN mkdir /usr/local/lib/node_modules/conf
+
 VOLUME /usr/local/lib/node_modules/conf
 
 RUN cp -f /usr/local/lib/node_modules/conf/settings.js /usr/local/lib/node_modules/settings.js

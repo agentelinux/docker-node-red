@@ -91,7 +91,7 @@ module.exports = {
     //    }]
     //},
     
-    httpAdminAuth: {user:"rootmin", pass:"411c22f37f501496de33f8c4a8eb1b5a"}
+    httpAdminAuth: {user:"rootmin", pass:"411c22f37f501496de33f8c4a8eb1b5a"},
     
     // To password protect the node-defined HTTP endpoints (httpNodeRoot), or
     // the static content (httpStatic), the following properties can be used.

@@ -7,11 +7,8 @@ RUN npm install -g node-red
 
 WORKDIR /usr/local/lib/node_modules
 
-RUN mkdir /usr/local/lib/node_modules/conf
 
-ADD conf /usr/local/lib/node_modules/conf
-
-RUN cp -f /usr/local/lib/node_modules/conf/settings.js /usr/local/lib/node_modules/node-red/settings.js
+COPY conf/settings.js node-red/settings.js
 
 RUN npm install -g node-red-node-mysql
 

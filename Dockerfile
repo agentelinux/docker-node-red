@@ -11,7 +11,7 @@ RUN mkdir /usr/local/lib/node_modules/conf
 
 VOLUME /usr/local/lib/node_modules/conf
 
-RUN cp -f /usr/local/lib/node_modules/conf/settings.js /usr/local/lib/node_modules/settings.js
+RUN cp -f /usr/local/lib/node_modules/conf/settings.js /usr/local/lib/node_modules/node-red/settings.js
 
 RUN npm install -g node-red-node-mysql
 

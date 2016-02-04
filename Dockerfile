@@ -11,6 +11,8 @@ WORKDIR /usr/local/lib/node_modules
 COPY conf/settings.js node-red/settings.js
 
 RUN npm install -g node-red-node-mysql
+RUN npm install -g node-red-contrib-elasticsearch
+
 
 # expose port
 EXPOSE 1880
